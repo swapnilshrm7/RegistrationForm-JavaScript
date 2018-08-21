@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head lan="en">
+		<link rel="stylesheet" type="text/css" href="form.css">
+        <title>Form-JS</title>
+		<script src="form.js"></script>
+    </head>
+	<body>
+		<div>
+			<h1>REGISTRATION FORM</h1>
+			<form name="form" onsubmit="return validateForm()" action="success.html" method="post">
+				<span class="First">First Name<span class="exception">*</span>: </span><input type="text" name="firstName" size="60">
+				<p id="requiredFirstName" class="exception"></p>
+				<span class="Last">Last Name: </span><input type="text" name="LastName" size="60">
+				<p id="lastName" class="exception"></p>
+				<span class="Phone">Phone Number<span class="exception">*</span>: </span><input type="text" name="PhoneNumber" size="60">
+				<p id="Pnumber" class="exception"></p>
+				<span class="Email">Email ID: </span><input type="text" name="Email" size="60">
+				<p id="EmailID" class="exception"></p>
+				<span class="Address">Address: </span><textarea type="text" rows="5" cols="70" name="Address" class="address"></textarea><br><br>
+				<span class="city"> city : </span>
+				<select id="city">
+					<option value="select">select</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Pune">Pune</option>
+					<option value="Bangalore">Bangalore</option>
+					<option value="hyedrabad">hyedrabad</option>
+					<option value="other">other</option>
+				</select>
+				<p id="cities" class="exception"></p>
+				<span class="gender">Gender :</span>
+				<input type="radio" name="gender" id="male">Male
+				<input type="radio" name="gender" id="female">Female
+				<input type="radio" name="gender" id="trans">Trans
+				<p id="radio" class="exception"></p><br>
+				<input type="submit" class="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html>
